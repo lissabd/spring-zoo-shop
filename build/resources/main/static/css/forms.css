@@ -1,0 +1,107 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.login-page-container form {
+    background-color: white;
+    border: 2px solid #800000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    height: 300px
+}
+
+.login-page-container h2 {
+    font-size: 25px;
+    font-weight: 650;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-page-container form label {
+    font-weight: bold;
+}
+
+.login-page-container form input[type="text"],
+.login-page-container form input[type="password"],
+.login-page-container form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.login-page-container form input[type="submit"] {
+    background-color: #800000;
+    color: white;
+    cursor: pointer;
+}
+
+.login-page-container form input[type="submit"]:hover {
+    background-color: #660000;
+}
+
+.register-page-container {
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.register-page-container form {
+    background-color: white;
+    border: 2px solid #800000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 450px;
+    height: 350px;
+    margin-bottom: 60px;
+}
+
+.register-page-container h2 {
+    font-size: 25px;
+    font-weight: 650;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-page-container form label {
+    font-weight: bold;
+}
+
+.register-page-container form input[type="text"],
+.register-page-container form input[type="email"],
+.register-page-container form input[type="password"],
+.register-page-container form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.register-page-container form input[type="submit"] {
+    background-color: #800000;
+    color: white;
+    cursor: pointer;
+    margin-top:
+}
+
+.register-page-container form input[type="submit"]:hover {
+    background-color: #660000;
+}

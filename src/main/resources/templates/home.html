@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  <title>ZooShop</title>
+</head>
+<body>
+<header class="header">
+  <div class="fisrt-part-header">
+    <div class="logo">
+      <img src="/images/logo.png" alt="ZooShop Logo" />
+    </div>
+  </div>
+  <div class="second-part-header">
+    <nav>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/cart">Your Cart</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="banner">
+  <img src="/images/goldens-banner.png"/>
+  <div class="banner-content">
+    <div class="banner-text">Welcome to PetShop!</div>
+    <a href="/products"><button class="banner-but">Shop now</button></a>
+  </div>
+</div>
+<h2>Popular products</h2>
+<div class="popul-prod-cont">
+  <div class="card">
+    <img src="images/Корм для кошек.jpg" alt="Корм для кошек">
+    <h2>Корм для кошек</h2>
+    <p>Категория: cat</p>
+    <p>Цена: 700.0 руб.</p>
+  </div>
+  <div class="card">
+    <img src="images/Мятные шарики для кошек.jpg" alt="Мятные шарики для кошек">
+    <h2>Мятные шарики для кошек</h2>
+    <p>Категория: cat</p>
+    <p>Цена: 1300.0 руб.</p>
+  </div>
+  <div class="card">
+    <img src="images/Игрушка для кошек.jpg" alt="Игрушка для кошек">
+    <h2>Игрушка для кошек</h2>
+    <p>Категория: cat</p>
+    <p>Цена: 880.0 руб.</p>
+  </div>
+</div>
+<div class="container-shops">
+  <img src="/images/banner-shops.png"/>
+</div>
+<div class="cont-advert">
+  <div class="adver-text">
+    <p>New puppy or kitten?</p>
+    <p>FIND EVERYTHING TO WELCOME THEM HOME!</p>
+    <a href="/products"><button class="banner-but">Shop now</button></a>
+  </div>
+  <img src="/images/dogs.png"/>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p>Performed by a student of the IKBO-16-22 group, Abdeeva A.R.</p>
+  </div>
+</footer>
+</body>
+</html>

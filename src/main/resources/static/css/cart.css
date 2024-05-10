@@ -1,0 +1,82 @@
+td img {
+  max-width: 100px;
+  max-height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+table {
+  margin: 0 auto;
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: lightgray;
+}
+
+
+.cart-container {
+padding: 40px;
+height: 80vh;
+display: flex;
+}
+
+.cart-items {
+    width: 50%;
+    float: left;
+    padding-right: 20px;
+}
+
+.order-form {
+    width: 50%;
+    float: right;
+    background-color: white;
+}
+
+.order-form  h1 {
+    margin-bottom: 20px;
+}
+
+.order-form {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.order-form input[type="text"],
+.order-form input[type="tel"],
+.order-form textarea {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.order-form input[type="submit"] {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-form input[type="text"]::placeholder,
+.order-form input[type="tel"]::placeholder,
+.order-form textarea::placeholder {
+    color: black;
+}
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  <link rel="stylesheet" th:href="@{/css/catalog.css}" />
+  <title>Товары</title>
+</head>
+<body>
+<header class="header">
+  <div class="fisrt-part-header">
+    <div class="logo">
+      <img src="/images/logo.png" alt="ZooShop Logo" />
+    </div>
+  </div>
+  <div class="second-part-header">
+    <nav>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/cart">Your Cart</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="products-banner">
+  <img src="/images/products-banner.png"/>
+</div>
+<div class="container">
+  <div class="namespace">
+    <h1>For dogs</h1>
+  </div>
+  <div class="products" id="dog-products">
+    <div th:each="product : ${products}" th:if="${product.category eq 'dog'}" class="product">
+      <img th:src="@{'images/' + ${product.title} + '.jpg'}" alt="Фото товара">
+      <h2 th:text="${product.title}" class="productName"></h2>
+      <p>Price: <span th:text="${product.cost}" class="productCost"></span> руб.</p>
+      <form method="post" action="/cart/add">
+        <input type="hidden" name="productId" th:value="${product.id}">
+        <input type="number" name="quantity" value="1">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="namespace">
+    <h1>For cats</h1>
+  </div>
+  <div class="products" id="cat-products">
+    <div th:each="product : ${products}" th:if="${product.category eq 'cat'}" class="product">
+      <img th:src="@{'images/' + ${product.title} + '.jpg'}" alt="Фото товара">
+      <h2 th:text="${product.title}" class="productName"></h2>
+      <p>Price: <span th:text="${product.cost}" class="productCost"></span> руб.</p>
+      <form method="post" action="/cart/add">
+        <input type="hidden" name="productId" th:value="${product.id}">
+        <input type="number" name="quantity" value="1">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="namespace">
+    <h1>For fish</h1>
+  </div>
+  <div class="products" id="fish-products">
+    <div th:each="product : ${products}" th:if="${product.category eq 'fish'}" class="product">
+      <img th:src="@{'images/' + ${product.title} + '.jpg'}" alt="Фото товара">
+      <h2 th:text="${product.title}" class="productName"></h2>
+      <p>Price: <span th:text="${product.cost}" class="productCost"></span> руб.</p>
+      <form method="post" action="/cart/add">
+        <input type="hidden" name="productId" th:value="${product.id}">
+        <input type="number" name="quantity" value="1">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p>Performed by a student of the IKBO-16-22 group, Abdeeva A.R.</p>
+  </div>
+</footer>
+</body>
+</html>

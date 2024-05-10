@@ -1,0 +1,44 @@
+.admin-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+    margin: 70px auto;
+}
+
+.admin-panel h1, .admin-panel h2 {
+    color: #000;
+}
+
+.admin-panel form {
+    width: 100%;
+}
+
+.admin-panel input[type="text"],
+.admin-panel input[type="number"],
+.admin-panel input[type="file"] {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.admin-panel button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #F9E49B;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-panel button[type="submit"]:hover {
+    background-color: #FFD874;
+}
